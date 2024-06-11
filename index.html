@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hit The Buzzer Win A Cookie</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.1.0/confetti.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Hit The Buzzer Win A Cookie</h1>
+    <button id="toggle-mode-button">Toggle Mode</button>
+    <div class="game-description">
+        <p>Welcome to Hit The Buzzer Win A Cookie!<br>To win the game, you must hit the buzzer and receive a cookie.</p>
+    </div>
+    <button data-action="start">Start Game</button>
+    <div id="game-area" style="display: none;">
+        <p>Press the buzzer to win a cookie!</p>
+        <button data-action="buzzer">Buzzer</button>
+        <p id="result"></p>
+    </div>
+    <audio id="win-sound" src="win-sound.mp3"></audio>
+    <audio id="lose-sound" src="lose-sound.mp3"></audio>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(https://i.ibb.co/8X9GJYf/school-kid-playing-quiz-game-answering-question-standing-stand-button-boy-pressed-buzzer-first-raise.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.game-description {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#toggle-mode-button {
+    background-color: #444;
+}
+
+#toggle-mode-button:hover {
+    background-color: #555;
+}
+
+[data-action="start"] {
+    background-color: #4CAF50;
+}
+
+[data-action="start"]:hover {
+    background-color: #45a049;
+}
+
+#game-area {
+    text-align: center;
+    margin-top: 20px;
+}
+
+[data-action="buzzer"] {
+    background-color: #f44336;
+}
+
+[data-action="buzzer"]:hover {
+    background-color: #d32f2f;
+}
+
+#result {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
